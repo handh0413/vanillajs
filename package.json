@@ -1,0 +1,23 @@
+{
+  "name": "vanillajs",
+  "version": "1.0.0",
+  "description": "A simple static site",
+  "repository": "https://github.com/handh0413/vanillajs.git",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public",
+    "build": "npm run clean && npm run copy",
+    "clean": "rimraf dist",
+    "copy": "copyfiles -u 1 src/**/* public"
+  },
+  "author": "Donghee Han <handh0413@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.7"
+  }
+}
