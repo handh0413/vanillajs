@@ -9,6 +9,8 @@ const USERNAME = 'username';
 function onLoginClick(event) {
   event.preventDefault();
   localStorage.setItem(USERNAME, username.value);
+  // TODO: 깔끔하게 분리하는 방법은 없을까?
+  document.getElementById('hello').value = `👋반가워요! ${localStorage.getItem('username')}`;
   username.value = '';
   loginContent.classList.add(HIDDEN_CLASS);
   mainContent.classList.remove(HIDDEN_CLASS);

@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <title>JS Challenge</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/clock.css" />
   </head>
   <body>
     <div id="loginContent" class="login-background hidden">
@@ -20,6 +22,17 @@
       </div>
     </div>
     <div id="mainContent" class="hidden">
+      <div class="header-template">
+        <div class="responsive wrapper">
+          <div id="hello" class="logo"></div>
+          <div class="right">날씨</div>
+        </div>
+      </div>
+
+      <div class="clock-template">
+        <p id="clock"></p>
+      </div>
+
       <div class="todo-template">
         <div class="todo-title">Todo List</div>
         <div class="todo-content">
@@ -32,6 +45,8 @@
       </div>
     </div>
     <script src="js/login.js"></script>
+    <script src="js/header.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

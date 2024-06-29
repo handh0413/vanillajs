@@ -1,0 +1,43 @@
+.responsive {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 1024px;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+@media (max-width: 1024px) {
+  .responsive {
+    width: 768px;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.header-template {
+  position: fixed;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.wrapper {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* 자식 엘리먼트 사이에 여백을 최대로 설정 */
+}
+
+.wrapper .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.wrapper .right {
+  display: flex;
+  align-items: center;
+}
