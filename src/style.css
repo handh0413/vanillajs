@@ -155,7 +155,6 @@
 }
 
 .todo-list-item .checkbox.checked .text {
-  color: #adb5bd;
   text-decoration: line-through;
 }
 
