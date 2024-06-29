@@ -6,6 +6,16 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/clock.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        opacity: 90%;
+      }
+    </style>
   </head>
   <body>
     <div id="loginContent" class="login-background hidden">
@@ -30,7 +40,7 @@
       </div>
 
       <div class="clock-template">
-        <p id="clock"></p>
+        <p class="clock" id="clock"></p>
       </div>
 
       <div class="todo-template">
@@ -48,5 +58,6 @@
     <script src="js/header.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
