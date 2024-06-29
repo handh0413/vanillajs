@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="login-background">
+    <div id="loginContent" class="login-background hidden">
       <div class="white-box">
         <div class="logo-area">
           <h2>JS Challenge</h2>
         </div>
         <form>
           <label>
-            <input class="login-input" placeholder="닉네임을 입력해주세요!" />
+            <input id="username" class="login-input" placeholder="What is your name?" />
           </label>
-          <button class="login-button">로그인</button>
+          <button id="loginButton" class="login-button">Log In</button>
         </form>
       </div>
     </div>
+    <div id="mainContent" class="hidden">안녕하세요!</div>
+    <script src="index.js"></script>
   </body>
 </html>
