@@ -1,0 +1,13 @@
+.clock-template {
+  width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.clock {
+  background: #f8f9fa;
+  opacity: 50%;
+}

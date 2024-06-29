@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .login-background {
   position: absolute;
   left: 0;

@@ -3,21 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <title>JS Challenge</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/clock.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+    </style>
   </head>
   <body>
-    <div class="login-background">
+    <div id="loginContent" class="login-background hidden">
       <div class="white-box">
         <div class="logo-area">
           <h2>JS Challenge</h2>
         </div>
         <form>
           <label>
-            <input class="login-input" placeholder="닉네임을 입력해주세요!" />
+            <input id="username" class="login-input" placeholder="What is your name?" />
           </label>
-          <button class="login-button">로그인</button>
+          <button id="loginButton" class="login-button">Log In</button>
         </form>
       </div>
     </div>
+    <div id="mainContent" class="hidden">
+      <div class="header-template">
+        <div class="responsive wrapper">
+          <div id="hello" class="logo"></div>
+          <div class="right">
+            <p id="weather">날씨</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="clock-template">
+        <p class="clock" id="clock"></p>
+      </div>
+
+      <div class="todo-template">
+        <div class="todo-title">Todo List</div>
+        <div class="todo-content">
+          <div class="todo-insert">
+            <input id="todoInput" placeholder="Add your task!" />
+            <button id="todoAddButton">+</button>
+          </div>
+          <div id="todoList" class="todo-list"></div>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
   </body>
 </html>
